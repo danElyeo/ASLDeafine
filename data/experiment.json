@@ -1,0 +1,25 @@
+{
+	"lectureVideo":"https://s3.amazonaws.com/ASLDeafine/CondExperiment/CondExperiment_Lecture.large1080p.mp4",
+	"preview":"https://s3.amazonaws.com/ASLDeafine/CondExperiment/CondExperiment_Preview_BS_S.mov",
+	"terms": 
+	[{
+		"name":"Analyze",
+		"time_start":"2.44",
+		"time_end":"2.56",
+		"sign_video":"https://s3.amazonaws.com/ASLDeafine/CondExperiment/Terms/Analyze/320/Analyze_FF_BS_S.small480x320.mp4",
+		"ex_video":"https://s3.amazonaws.com/ASLDeafine/CondExperiment/Terms/Analyze/320/Analyze_Ex_FF_BS_S.small480x320.mp4",
+		"def_video":"https://s3.amazonaws.com/ASLDeafine/CondExperiment/Terms/Analyze/320/Analyze_Def_FF_BS_S.small480x320.mp4"
+	},
+	{
+		"name":"Beaker",
+		"timestamp":"",
+		"sign_video":"https://s3.amazonaws.com/ASLDeafine/CondExperiment/Terms/Beaker/320/Beaker_FF_CB_S.small480x320.mp4",
+		"def_video":"https://s3.amazonaws.com/ASLDeafine/CondExperiment/Terms/Beaker/320/Beaker_Def_FF_CB_S.small480x320.mp4"
+	},
+	{
+		"name":"Calculator",
+		"timestamp":"",
+		"sign_video":"https://s3.amazonaws.com/ASLDeafine/CondExperiment/Terms/Calculator/320/Calculator_FF_CB_S.small480x320.mp4",
+		"ex_video":"https://s3.amazonaws.com/ASLDeafine/CondExperiment/Terms/Calculator/320/Calculator_Ex_FF_CB_S.small480x320.mp4"
+	}]
+}

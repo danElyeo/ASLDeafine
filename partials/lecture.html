@@ -1,0 +1,91 @@
+<!-- This loads the lecture page, which consists of the lecture video, terms associated with the lecture, examples, definitions, as well as vetting procedures. Each lecture is identified with a lecture_id, which is obtained at runtime from topics.html. -->
+<section>
+<div class="viewport">
+<!-- <div class="row"> -->
+	<!-- <div class="viewport-content float_center"> -->
+	<div class="viewport-content">
+	<!-- <div class="container"> -->
+		<!-- <div class="lecture-video child"> -->
+		<div class="main-panel">
+			<!-- <h5>Lecture: {{lectureId}}</h5> -->
+			<div id="terms-panel">
+				<div id="left-btn">
+					<a href="#left"><</a>
+				</div>
+				<div id="terms-container">
+					<div><strong>TERMS</strong></div>
+					<div id="terms-scroller">
+						<div class="term-video-holder" ng-repeat="term in terms">
+						<div class="term-label" ng-show="usingEnglish">{{term.name}}</div>
+						<sign-video width="150px" name="{{term.name}}" filepath="{{getFullPath(term.sign_video)}}" ng-click="setActiveTerm(term)">
+						</sign-video>
+						</div>
+					</div> <!-- end terms-scroller -->
+				</div> <!-- end terms-container -->
+				<div id="right-btn">
+					<a href="#right">></a>
+				</div>
+				<div style="clear:both;"></div>
+			</div> <!-- end terms-panel -->
+
+			<!-- Main Video Player -->
+			<div class="main-video-holder">
+				<!-- Lecture Video -->
+				<deafine-video id='main-video' ng-src="{{hostDir + activeVideoFile + videoExt}}" type="{{videoFormat}}" width="550px" controls video-end-handler="setLectureWatched()">
+				</deafine-video>
+				<!-- Example Video -->
+				<!-- Definition Video -->
+			</div> 
+			<div ng-show="showQuestions" class="question-container">
+				<div class="question">
+				Question: {{currQuestion}}
+				</div>
+				<hr />
+				<div class="likert">
+				<table>
+				<tr>
+					<td><input type="radio" name="likert" id="SA"><br><label for="SA">Strongly Agree</label></td>
+					<td><input type="radio" name="likert" id="A"><br><label for="A">Agree</label></td>
+					<td><input type="radio" name="likert" id="N"><br><label for="N">Neutral</label></td>
+					<td><input type="radio" name="likert" id="D"><br><label for="D">Disagree</label></td>
+					<td><input type="radio" name="likert" id="SD"><br><label for="SD">Strongly Disagree</label></td>
+				</tr>
+				</table>
+				<br>
+				<button class="likert-btn" id="prev" ng-click="prevQuestion()">Previous</button>
+				<button class="likert-btn" id="next" ng-click="nextQuestion()">Next</button>
+				</div>
+			</div>
+		</div> <!-- end question container-->
+
+		<!-- <div class="sidebar child"> -->
+		<div class="sidebar">
+			<div><strong>OPTIONS</strong></div>
+			<div name="lecture-btn" class="sidebar-option">
+				<div ng-show="usingEnglish">Lecture</div>
+				<sign-video name="Lecture" filepath="videos/option_labels/480/LECTURE_label_FF_320_BS" width="150px" clickable="true" ng-click="setActiveLectureVideo()">
+				</sign-video>
+			</div>
+			<div name="sign-btn"class="sidebar-option">
+				<div ng-show="usingEnglish">Sign</div>
+				<sign-video name="Sign" filepath="videos/option_labels/480/SIGN_label_FF_320_BS" width="150px" clickable="true" ng-click="setActiveSignVideo()">
+				</sign-video>
+			</div>
+			<div name="def-btn" class="sidebar-option">
+				<div ng-show="usingEnglish">Definition</div>
+				<sign-video name="Definition" filepath="videos/option_labels/480/DEFINITION_LABEL_FF_320_BS" width="150px" clickable="true" ng-click="setActiveDefVideo()">
+				</sign-video>
+			</div>
+			<div name="example-btn" class="sidebar-option">
+			<div ng-show="usingEnglish">Example</div>
+			<sign-video name="Example" filepath="videos/option_labels/480/EXAMPLE_label_FF_320_BS" width="150px" clickable="true" ng-click="setActiveExampleVideo()">
+				</sign-video>
+			</div>
+			<div name="vet-btn" class="sidebar-option">
+			<div ng-show="usingEnglish">Vet</div>
+			<sign-video name="Vet" filepath="videos/option_labels/480/VET_label_FF_320_DD" width="150px" clickable="true" ng-click="initQuestions()">
+			</div>
+		</div>
+	</div>
+</div>
+</section>

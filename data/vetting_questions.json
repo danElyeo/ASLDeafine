@@ -1,0 +1,33 @@
+{
+	"questions": 
+	[
+		{
+			"type":"likert",
+			"question":"I feel that this is an appropriate ASL sign."
+		},
+		{
+			"type":"likert",
+			"question":"I feel that this sign makes sense in THIS LECTURE."
+		},
+		{
+			"type":"likert",
+			"question":"I feel that this sign is conceptually APPROPRIATE."
+		},
+		{
+			"type":"likert",
+			"question":"I would use this sign WITH KIDS IN A SCHOOL SETTING."
+		},
+		{
+			"type":"likert",
+			"question":"I would use this sign WITH OTHER ADULTS in ACADEMIC SETTINGS."
+		},
+		{
+			"type":"binary",
+			"question":"I have used this sign before IN THIS CONTEXT."
+		},
+		{
+			"type":"binary",
+			"question":"I have a different sign I prefer to use instead."
+		}
+	]
+}

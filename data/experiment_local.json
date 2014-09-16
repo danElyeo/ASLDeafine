@@ -1,0 +1,25 @@
+{
+	"lectureVideo":"videos/local/Experiment/CondExperiment_Lecture.large720p.mp4",
+	"preview":"videos/local/Experiment/CondExperiment_Preview_BS_S.mov",
+	"terms": 
+	[{
+		"name":"Analyze",
+		"time_start":"2.44",
+		"time_end":"2.56",
+		"sign_video":"videos/local/Experiment/Signs/Analyze_BS_S.mov",
+		"ex_video":"videos/local/Experiment/Ex/Analyze_Ex_BS_S.mov",
+		"def_video":"videos/local/Experiment/Def_FF/Analyze_Def_FF_BS_S.mp4"
+	},
+	{
+		"name":"Beaker",
+		"timestamp":"",
+		"sign_video":"videos/local/Experiment/Signs/Beaker_CB_S.mov",
+		"def_video":"videos/local/Experiment/Def_FF/Beaker_Def_FF_CB_S.mp4"
+	},
+	{
+		"name":"Calculator",
+		"timestamp":"",
+		"sign_video":"videos/local/Experiment/Signs/Calculator_CB_S.mov",
+		"ex_video":"videos/local/Experiment/Ex/Calculator_Ex_CB_S.mov"
+	}]
+}

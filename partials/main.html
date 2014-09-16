@@ -1,0 +1,51 @@
+<!-- This html file includes the landing page for the app, loaded by angular routing.  -->
+<section>
+<div class="container">
+	<h1>Landing Page</h1>
+
+	<!-- Get from user details from . -->
+	<p>Welcome {{username}}</p>
+	
+	<!-- If user has not watched intro video before, load the intro video now -->
+	
+	<div ng-if="!intro_watched">
+		<div ng-include src="'partials/intro-video.html'"></div>
+		<!-- <p ng-show="{{intro_watched}}">You have finished watching the intro!</p> -->
+	</div>
+
+	<!-- <div ng-hide="intro_watched" class="viewport center">
+		<h2>First order of business: Play introductory video</h2>
+		<a id="intro-video"></a>
+		<deafine-video src="videos/Welcome_NT.m4v" width="default" height="default" controls></deafine-video>
+	</div> -->
+
+	<!-- Load topics viewport. This is always loaded, but will be hidden when user has not watched the intro video yet. If the video is playing, it will only show up after the video has finished playing, allowing the user to scroll down. -->
+
+	<div id="topics" class="container" ng-show="intro_watched">
+		<h1 class="text-center">Loading topics</h1>
+		<div id="topics-container" class="row">
+			<!-- <div class="col-md-6 text-center">Hello
+			</div>
+			<div class="col-md-6">World
+			</div> -->
+			<!-- <div class="col-md-4"></div> -->
+			<div class="col-md-4" ng-repeat="topic in topics">
+				<div class="topic-placeholder center-block">
+					<h2 class="center">{{topic}}</h2>
+					<div ng-repeat="lecture in lectures | filter: { topic:topic }">
+						<div class="lecture-holder center-block">
+							<div class="center" ng-show="usingEnglish">{{lecture.name}}</div>
+							<a href="#/lecture/{{lecture.name}}">
+								<sign-video filepath={{getFullPath(lecture.preview)}} width="200px"></sign-video>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="col-md-4"></div> -->
+		</div> <!-- end topics container -->
+	</div>
+
+	
+</div> <!-- close container -->
+</section>

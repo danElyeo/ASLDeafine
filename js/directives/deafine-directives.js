@@ -1,0 +1,1 @@
+angular.module('deafine.directives', ['deafine.factories']);

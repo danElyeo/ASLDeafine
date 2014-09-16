@@ -1,0 +1,20 @@
+{
+	"lectures":
+	[
+		{
+			"name":"Conducting an Experiment",
+			"preview":"https://s3.amazonaws.com/ASLDeafine/CondExperiment/320/CondExperiment_preview_FF_480_BS_S.webm",
+			"topic":"Science"
+		},
+		{
+			"name":"Habitats",
+			"preview":"https://s3.amazonaws.com/ASLDeafine/Habitats/Habitat_Preview_BS_S.mov",
+			"topic":"Biology"
+		},
+		{
+			"name":"Heredity",
+			"preview":"https://s3.amazonaws.com/ASLDeafine/Heredity/Heredity_preview_BS.mov",
+			"topic":"Biology"
+		}
+	]
+}

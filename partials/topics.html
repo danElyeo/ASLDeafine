@@ -1,0 +1,24 @@
+<!-- This section is used to display all the different video files for topics. -->
+<section>
+
+<!-- Get the number of topics from the database, then create the views for each topic -->
+<div class="viewport" ng-controller="TopicController">
+	<!-- Each placeholder contains at most three lecture videos. Dynamically, do not include those that have already been viewed. -->
+		<div class="topic-placeholder" ng-repeat="topic in topics">
+			<a href="www.google.com">here</a>
+			<h2 class="center">{{topic.name}}</h2>
+			<div ng-repeat="lecture in topic.lectures">
+				<p class="center">{{lecture.name}}</p>
+				
+				<div class="center" style="display:inline;">
+					
+					<deafine-video src="videos/Welcome_NT.m4v" width="100px"></deafine-video>
+					<!-- <deafine-video src="videos/{{lecture.path}}" width="100px"></deafine-video> -->
+				</div>
+				
+			</div>
+		</div>
+</div>
+
+<script src=""></script>
+</section>
